@@ -1,0 +1,13 @@
+body {
+  color: var(--h5-c-text);
+}
+
+.icon-btn {
+  @apply inline-block cursor-pointer select-none opacity-75 transition duration-200 ease-in-out hover:opacity-100 hover:text-blue-600;
+}
+
+.dark {
+  .icon-btn {
+    @apply hover:text-blue-400;
+  }
+}
