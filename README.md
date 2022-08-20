@@ -1,10 +1,6 @@
-<p align='center'>
-Mocking up mobile web app with <b>Vitesse-H5</b><sup><em>(speed)</em></sup><br>
-</p>
+# Vitesse-H5
 
-> H5 Project Template
-
-<br>
+> Mocking up mobile web app with <b>Vitesse-H5</b><sup><em>(speed)</em></sup><br>
 
 <p align='center'>
 <a href="https://vitesse-h5.yunle.fun/">Live Demo</a>
