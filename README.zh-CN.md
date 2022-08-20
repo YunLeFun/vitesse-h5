@@ -1,7 +1,8 @@
 <p align='center'>
 <h1>Vitesse-H5</h1>
-快速地<sup><em>Vitesse-H5</em></sup> 创建移动端 Web 应用
-<br>
+
+> 快速地<sup><em>Vitesse-H5</em></sup> 创建移动端 Web 应用
+
 </p>
 
 <br>

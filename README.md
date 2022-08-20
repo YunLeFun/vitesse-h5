@@ -1,7 +1,8 @@
 <p align='center'>
 <h1>Vitesse-H5</h1>
-Mocking up mobile web app with <b>Vitesse-H5</b><sup><em>(speed)</em></sup><br>
-<br>
+
+> Mocking up mobile web app with <b>Vitesse-H5</b><sup><em>(speed)</em></sup>
+
 </p>
 
 <br>
