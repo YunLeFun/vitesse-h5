@@ -1,6 +1,10 @@
-# Vitesse-H5
+<p align='center'>
+<h1>Vitesse-H5</h1>
+Mocking up mobile web app with <b>Vitesse-H5</b><sup><em>(speed)</em></sup><br>
+<br>
+</p>
 
-> Mocking up mobile web app with <b>Vitesse-H5</b><sup><em>(speed)</em></sup><br>
+<br>
 
 <p align='center'>
 <a href="https://vitesse-h5.yunle.fun/">Live Demo</a>
@@ -9,7 +13,7 @@
 <br>
 
 <p align='center'>
-<b>English</b> | <a href="https://github.com/antfu/vitesse/blob/main/README.zh-CN.md">简体中文</a>
+<b>English</b> | <a href="./README.zh-CN.md">简体中文</a>
 <!-- Contributors: Thanks for geting interested, however we DON'T accept new transitions to the README, thanks. -->
 </p>
 

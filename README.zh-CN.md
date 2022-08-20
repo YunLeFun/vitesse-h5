@@ -1,6 +1,5 @@
-# Vitesse-H5
-
 <p align='center'>
+<h1>Vitesse-H5</h1>
 快速地<sup><em>Vitesse-H5</em></sup> 创建移动端 Web 应用
 <br>
 </p>
@@ -19,7 +18,7 @@
 
 <br>
 
-## 为什么 Vitesse-H5?
+## 为什么有 Vitesse-H5?
 
 由于工作的原因，我主要编写一些移动端相关的应用项目。
 而我自己业余也经常写一些小工具，譬如 [air-conditioner](https://github.com/YunYouJun/air-conditioner)、[cook](https://github.com/YunYouJun/cook)、[your-university](https://yu.yunyoujun.cn/) 等。
