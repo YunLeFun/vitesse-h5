@@ -15,7 +15,7 @@
 
 <p align='center'>
 <b>English</b> | <a href="./README.zh-CN.md">简体中文</a>
-<!-- Contributors: Thanks for geting interested, however we DON'T accept new transitions to the README, thanks. -->
+<!-- Contributors: Thanks for getting interested, however we DON'T accept new transitions to the README, thanks. -->
 </p>
 
 <br>
@@ -23,7 +23,7 @@
 ## Why Vitesse-H5?
 
 Due to my work, I mainly write some mobile related applications.
-I also write some small tools in my spare time, such as [air-conditioner](https://github.com/YunYouJun/air-conditioner), [cook](https://github.com/YunYouJun/cook), [your- university](https://yu.yunyoujun.cn/) and so on.
+I also write some small tools in my spare time, such as [air-conditioner](https://github.com/YunYouJun/air-conditioner), [cook](https://github.com/YunYouJun/cook), [your-university](https://yu.yunyoujun.cn/) and so on.
 Most of their traffic comes from mobile, so mobile adaptation is essential.
 
 There are also some more appropriate strategies and practices for mobile.
@@ -172,7 +172,7 @@ Go to [Netlify](https://app.netlify.com/start) and select your clone, `OK` along
 
 ### Docker Production Build
 
-First, build the vitesse image by opening the terminal in the project's root directory.
+First, build the vitesse-h5 image by opening the terminal in the project's root directory.
 
 ```bash
 docker buildx build . -t vitesse-h5:latest

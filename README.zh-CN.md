@@ -8,13 +8,13 @@
 <br>
 
 <p align='center'>
-<a href="https://vitesse.netlify.app/">在线 Demo</a>
+<a href="https://vitesse-h5.yunle.fun/">在线 Demo</a>
 </p>
 
 <br>
 
 <p align='center'>
-<a href="https://github.com/antfu/vitesse/blob/main/README.md">English</a> | <b>简体中文</b>
+<a href="./README.md">English</a> | <b>简体中文</b>
 </p>
 
 <br>
@@ -171,3 +171,17 @@ pnpm build
 ### 部署到 Netlify
 
 前往 [Netlify](https://app.netlify.com/start) 并选择你的仓库, 一路 `OK` 下去，稍等一下后，你的应用将被创建.
+
+### 使用 Docker 构建
+
+首先，通过在项目的根目录中打开终端来构建 vitesse-h5 映像。
+
+```bash
+docker buildx build . -t vitesse-h5:latest
+```
+
+运行映像并使用 `-p` 标志指定端口映射。
+
+```bash
+docker run --rm -it -p 8080:80 vitesse-h5:latest
+```
