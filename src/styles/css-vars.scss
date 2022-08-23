@@ -1,7 +1,11 @@
 :root {
+  --h5-c-bg: transparent;
   --h5-c-text: #000;
 }
 
 html.dark {
+  color-scheme: dark;
+
+  --h5-c-bg: #121212;
   --h5-c-text: #fff;
 }
