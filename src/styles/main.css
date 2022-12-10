@@ -13,7 +13,7 @@ body,
 }
 
 #nprogress .bar {
-  background: rgb(13,148,136);
+  background: var(--h5-c-primary);
   opacity: 0.75;
   position: fixed;
   z-index: 1031;

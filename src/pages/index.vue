@@ -27,33 +27,39 @@ const { t } = useI18n()
 
     <div py-4 />
 
-    <div m="auto" max-w="800px">
-      <input
-        id="input"
-        v-model="name"
-        :placeholder="t('intro.whats-your-name')"
-        :aria-label="t('intro.whats-your-name')"
-        type="text"
-        autocomplete="false"
-        p="x4 y2"
-        w="full"
-        text="center"
-        bg="transparent"
-        border="~ rounded gray-200 dark:gray-700"
-        @keydown.enter="go"
-      >
-      <label class="hidden" for="input">{{ t('intro.whats-your-name') }}</label>
-
-      <div>
-        <button
-          btn mt-4
-          :disabled="!name"
-          @click="go"
+    <Suspense>
+      <div m="auto" max-w="800px">
+        <input
+          id="input"
+          v-model="name"
+          :placeholder="t('intro.whats-your-name')"
+          :aria-label="t('intro.whats-your-name')"
+          type="text"
+          autocomplete="false"
+          p="x4 y2"
+          w="full"
+          text="center"
+          bg="transparent"
+          border="~ rounded gray-200 dark:gray-700"
+          @keydown.enter="go"
         >
-          {{ t('button.go') }}
-        </button>
+        <label class="hidden" for="input">{{ t('intro.whats-your-name') }}</label>
+
+        <div>
+          <button
+            btn mt-4
+            :disabled="!name"
+            @click="go"
+          >
+            {{ t('button.go') }}
+          </button>
+        </div>
       </div>
-    </div>
+
+      <template #fallback>
+        <Loading />
+      </template>
+    </Suspense>
   </div>
 </template>
 

@@ -5,7 +5,7 @@
   "scripts": {
     "build": "vite build",
     "build:ssg": "vite-ssg build",
-    "dev": "vite --port 3333 --open",
+    "dev": "vite --port 3333 --open --host",
     "lint": "eslint .",
     "preview": "vite preview",
     "preview-https": "serve dist",
