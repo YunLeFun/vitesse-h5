@@ -1,11 +1,20 @@
 <script setup lang="ts">
+import { useGtag } from 'vue-gtag-next'
+
 const user = useUserStore()
 const name = $ref(user.savedName)
 
 const router = useRouter()
+
+const { event } = useGtag()
+
 const go = () => {
   if (name)
     router.push(`/hi/${encodeURIComponent(name)}`)
+
+  event('click_go', {
+    event_category: 'custom_click',
+  })
 }
 
 const { t } = useI18n()

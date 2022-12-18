@@ -1,14 +1,16 @@
 <script setup lang="ts">
+import config from '~/config'
+
 // https://github.com/vueuse/head
 // you can use this to manipulate the document head in any components,
 // they will be rendered correctly in the html results with vite-ssg
 useHead({
-  title: 'H5 - Vitesse',
+  title: config.title,
   meta: [
-    { name: 'description', content: 'A H5 Template(Vite + Vue) inspired by Vitesse.' },
+    { name: 'description', content: config.description },
     {
       name: 'theme-color',
-      content: computed(() => isDark.value ? '#00aba9' : '#ffffff'),
+      content: computed(() => isDark.value ? config.mainColor : '#ffffff'),
     },
   ],
   link: [
