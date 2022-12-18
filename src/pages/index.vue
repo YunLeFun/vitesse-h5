@@ -9,12 +9,20 @@ const router = useRouter()
 const { event } = useGtag()
 
 const go = () => {
-  if (name)
+  if (name) {
     router.push(`/hi/${encodeURIComponent(name)}`)
 
-  event('click_go', {
-    event_category: 'custom_click',
-  })
+    event('click_go', {
+      event_label: name,
+      event_category: 'custom_click',
+    })
+  }
+  else {
+    event('click_go', {
+      event_label: 'null',
+      event_category: 'custom_click',
+    })
+  }
 }
 
 const { t } = useI18n()
