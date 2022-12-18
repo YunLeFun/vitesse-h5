@@ -1,3 +1,13 @@
+* {
+  -webkit-tap-highlight-color: transparent;
+  outline: none;
+}
+
+// img {
+//   user-select: none;
+//   pointer-events: none;
+// }
+
 body {
   background-color: var(--h5-c-bg);
   color: var(--h5-c-text);
