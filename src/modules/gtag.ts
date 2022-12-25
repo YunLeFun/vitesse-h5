@@ -4,6 +4,6 @@ import { type UserModule } from '~/types'
 
 export const install: UserModule = ({ app }) => {
   app.use(VueGtag, {
-    config: { id: config.gtag.id },
+    property: { id: config.gtag.id },
   })
 }
