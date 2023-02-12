@@ -53,8 +53,6 @@
 
 - 🔥 使用 [新的 `<script setup>` 语法](https://github.com/vuejs/rfcs/pull/227)
 
-- 🤙🏻 默认开启 [响应性语法糖](https://vuejs.org/guide/extras/reactivity-transform.html)
-
 - 📥 [API 自动加载](https://github.com/antfu/unplugin-auto-import) - 直接使用 Composition API 无需引入
 
 - 🖨 可选地使用 [vite-ssg](https://github.com/antfu/vite-ssg) 进行服务端生成 (SSG)（通常情况下，纯移动端项目且无独立路由需求，我更推荐 SPA）
