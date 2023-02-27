@@ -2,7 +2,7 @@
 import { useGtag } from 'vue-gtag-next'
 
 const user = useUserStore()
-const name = $ref(user.savedName)
+const name = ref(user.savedName)
 
 const router = useRouter()
 
@@ -10,10 +10,10 @@ const { event } = useGtag()
 
 const go = () => {
   if (name) {
-    router.push(`/hi/${encodeURIComponent(name)}`)
+    router.push(`/hi/${encodeURIComponent(name.value)}`)
 
     event('click_go', {
-      event_label: name,
+      event_label: name.value,
       event_category: 'custom_click',
     })
   }
