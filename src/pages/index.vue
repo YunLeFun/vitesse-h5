@@ -8,7 +8,7 @@ const router = useRouter()
 
 const { event } = useGtag()
 
-const go = () => {
+function go() {
   if (name) {
     router.push(`/hi/${encodeURIComponent(name.value)}`)
 
