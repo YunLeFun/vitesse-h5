@@ -1,0 +1,30 @@
+name: PR Merged
+
+# If you have access issues,
+# You need set `Settings` -> `Actions` -> `General` -> `Workflow permissions` -> `Read and write permissions`
+
+on:
+  pull_request_target:
+    branches:
+      - main
+    types:
+      - closed
+
+# due to permission, we should use pull_request_target instead of pull_request_view to trigger
+# another way: https://stackoverflow.com/a/71683208/7450566
+
+jobs:
+  if_merged:
+    runs-on: ubuntu-latest
+    steps:
+      - name: reply yun approved image
+        if: github.event.pull_request.merged == true
+        uses: actions/github-script@v6
+        with:
+          script: |
+            github.rest.issues.createComment({
+              issue_number: context.issue.number,
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              body: '<img width="200" src="https://user-images.githubusercontent.com/25154432/222963476-672010d2-6b54-478b-99c7-2c330f636bd0.png" alt="Yun Good!" />'
+            })
