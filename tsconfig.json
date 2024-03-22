@@ -18,7 +18,8 @@
     "types": [
       "vitest",
       "vite/client",
-      "vite-plugin-vue-layouts/client"
+      "vite-plugin-vue-layouts/client",
+      "unplugin-vue-router/client"
     ],
     "allowJs": true,
     "strict": true,

@@ -1,7 +1,8 @@
 import { ViteSSG } from 'vite-ssg'
 import { setupLayouts } from 'virtual:generated-layouts'
 import { trackRouter } from 'vue-gtag-next'
-import { routes } from 'vue-router/auto/routes'
+
+import { routes } from 'vue-router/auto-routes'
 import App from './App.vue'
 import type { UserModule } from './types'
 
