@@ -121,14 +121,14 @@
 
 ### GitHub 模板
 
-[使用这个模板创建仓库](https://github.com/YunYouJun/vitesse-h5/generate).
+[使用这个模板创建仓库](https://github.com/YunLeFun/vitesse-h5/generate).
 
 ### 克隆到本地
 
 如果您更喜欢使用更干净的 git 历史记录手动执行此操作
 
 ```bash
-npx degit YunYouJun/vitesse-h5 my-vitesse-h5
+npx degit YunLeFun/vitesse-h5 my-vitesse-h5
 cd my-vitesse-h5
 pnpm i # 如果你没装过 pnpm, 可以先运行: npm install -g pnpm
 ```

@@ -34,7 +34,7 @@ const { t } = useI18n()
       <div i-carbon-application-mobile inline-block />
     </div>
     <p m-2>
-      <a rel="noreferrer" href="https://github.com/YunYouJun/vitesse-h5" target="_blank">
+      <a rel="noreferrer" href="https://github.com/YunLeFun/vitesse-h5" target="_blank">
         Vitesse H5
       </a>
     </p>

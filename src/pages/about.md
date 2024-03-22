@@ -19,4 +19,4 @@ function vitesse() {
 }
 ```
 
-Check out the [GitHub repo](https://github.com/YunYouJun/vitesse-h5) for more details.
+Check out the [GitHub repo](https://github.com/YunLeFun/vitesse-h5) for more details.

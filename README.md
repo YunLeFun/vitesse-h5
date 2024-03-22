@@ -126,7 +126,7 @@ So I created this template to document what I think are the best practices for m
 If you prefer to do it manually with the cleaner git history
 
 ```bash
-npx degit YunYouJun/vitesse-h5 my-vitesse-h5
+npx degit YunLeFun/vitesse-h5 my-vitesse-h5
 cd my-vitesse-h5
 pnpm i # If you don't have pnpm installed, run: npm install -g pnpm
 ```
