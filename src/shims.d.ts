@@ -1,5 +1,9 @@
 declare interface Window {
   // extend the window
+
+  // https://clarity.microsoft.com
+  clarity: (action: 'event' | 'set', ...args: any[]) => void
+
 }
 
 // with unplugin-vue-markdown, markdown files can be treated as Vue components
