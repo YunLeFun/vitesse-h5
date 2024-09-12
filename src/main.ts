@@ -1,10 +1,10 @@
-import { ViteSSG } from 'vite-ssg'
+import type { UserModule } from './types'
 import { setupLayouts } from 'virtual:generated-layouts'
-import { trackRouter } from 'vue-gtag-next'
+import { ViteSSG } from 'vite-ssg'
 
+import { trackRouter } from 'vue-gtag-next'
 import { routes } from 'vue-router/auto-routes'
 import App from './App.vue'
-import type { UserModule } from './types'
 
 import '@unocss/reset/tailwind.css'
 import './styles/main.css'
