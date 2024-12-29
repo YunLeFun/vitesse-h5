@@ -1,10 +1,10 @@
 import path from 'node:path'
 import VueI18n from '@intlify/unplugin-vue-i18n/vite'
+import Shiki from '@shikijs/markdown-it'
 import Legacy from '@vitejs/plugin-legacy'
 import Vue from '@vitejs/plugin-vue'
-import LinkAttributes from 'markdown-it-link-attributes'
 
-import Shiki from 'markdown-it-shikiji'
+import LinkAttributes from 'markdown-it-link-attributes'
 import Unocss from 'unocss/vite'
 import AutoImport from 'unplugin-auto-import/vite'
 import Components from 'unplugin-vue-components/vite'
@@ -16,6 +16,8 @@ import { defineConfig } from 'vite'
 import Inspect from 'vite-plugin-inspect'
 import Layouts from 'vite-plugin-vue-layouts'
 import generateSitemap from 'vite-ssg-sitemap'
+
+import 'vitest/config'
 
 export default defineConfig({
   resolve: {
