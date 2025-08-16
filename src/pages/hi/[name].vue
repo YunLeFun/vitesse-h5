@@ -23,7 +23,7 @@ watchEffect(() => {
     </p>
 
     <template v-if="user.otherNames.length">
-      <p text-sm mt-4>
+      <div text-sm mt-4>
         <span opacity-75>{{ t('intro.aka') }}:</span>
         <ul>
           <li v-for="otherName in user.otherNames" :key="otherName">
@@ -32,7 +32,7 @@ watchEffect(() => {
             </router-link>
           </li>
         </ul>
-      </p>
+      </div>
     </template>
 
     <div m="auto" max-w="800px">
