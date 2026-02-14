@@ -10,7 +10,6 @@
 .prose a:active {
   opacity: 0.6;
 }
-
 .prose pre:not(.shiki) {
   padding: 0;
 }
@@ -19,25 +18,20 @@
   font-family: 'DM Mono', monospace;
   font-size: 1.2em;
   line-height: 1.4;
-  border-radius: 10px;
 }
 
 .prose img {
   width: 100%;
-  border-radius: 10px;
 }
 
-.shiki-light {
-  background: var(--h5-c-input-bg) !important;
-}
-.shiki-dark {
-  background: var(--h5-c-input-bg) !important;
-}
-
-html.dark .shiki-light {
-  display: none;
+.shiki,
+.shiki span {
+  color: var(--shiki-light);
+  background: var(--shiki-light-bg);
 }
 
-html:not(.dark) .shiki-dark {
-  display: none;
+html.dark .shiki,
+html.dark .shiki span {
+  color: var(--shiki-dark);
+  background: var(--shiki-dark-bg);
 }

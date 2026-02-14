@@ -14,7 +14,7 @@ settings:
 intro:
   desc: 📱 A H5 Template(Vite + Vue) inspired by Vitesse.
   dynamic-route: Demo of dynamic route
-  hi: Hi, {name}!
+  hi: 'Hi, {name}!'
   aka: Also known as
   whats-your-name: What's your name?
 not-found: Not found

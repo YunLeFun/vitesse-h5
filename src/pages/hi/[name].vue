@@ -1,22 +1,25 @@
 <script setup lang="ts">
-const props = defineProps<{ name: string }>()
 const router = useRouter()
+const route = useRoute()
 const user = useUserStore()
 const { t } = useI18n()
 
 watchEffect(() => {
-  user.setNewName(props.name)
+  const name = route.params.name
+  user.setNewName(Array.isArray(name) ? name[0] : name)
 })
 </script>
 
 <template>
   <div class="hi-page">
     <div class="hi-hero">
-      <div class="hi-icon">
-        <div i-carbon-pedestrian />
+      <div class="hi-icon-wrapper">
+        <div class="hi-icon">
+          <div i-carbon-pedestrian />
+        </div>
       </div>
       <h1 class="hi-title">
-        {{ t('intro.hi', { name: props.name }) }}
+        {{ t('intro.hi', { name: user.savedName }) }}
       </h1>
       <p class="hi-desc">
         {{ t('intro.dynamic-route') }}
@@ -56,17 +59,34 @@ watchEffect(() => {
 
 <style scoped>
 .hi-page {
-  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 48px;
 }
 
 .hi-hero {
-  margin-bottom: 28px;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.hi-icon-wrapper {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 16px;
 }
 
 .hi-icon {
-  font-size: 3rem;
-  color: var(--h5-c-primary);
-  margin-bottom: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 64px;
+  height: 64px;
+  font-size: 1.75rem;
+  color: #fff;
+  background: linear-gradient(135deg, #34c759, #30d158);
+  border-radius: 14px;
+  box-shadow: 0 4px 12px rgba(52, 199, 89, 0.3);
 }
 
 .hi-title {
@@ -77,15 +97,15 @@ watchEffect(() => {
 }
 
 .hi-desc {
-  font-size: 0.8125rem;
+  font-size: 0.9375rem;
   color: var(--h5-c-secondary-text);
   margin: 0;
 }
 
 .hi-aliases {
   text-align: left;
-  margin: 0 -16px 28px;
-  padding: 0 16px;
+  width: 100%;
+  margin-bottom: 28px;
 }
 
 .hi-aliases-header {
@@ -153,7 +173,7 @@ watchEffect(() => {
 }
 
 .hi-actions {
+  width: 100%;
   max-width: 400px;
-  margin: 0 auto;
 }
 </style>

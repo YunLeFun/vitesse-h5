@@ -14,7 +14,7 @@ settings:
 intro:
   desc: 📱 固执己见的 Vite H5 项目模板
   dynamic-route: 动态路由演示
-  hi: 你好，{name}
+  hi: '你好，{name}'
   aka: 也叫
   whats-your-name: 输入你的名字
 not-found: 未找到页面

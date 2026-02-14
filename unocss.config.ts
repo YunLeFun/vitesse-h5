@@ -3,7 +3,7 @@ import {
   presetAttributify,
   presetIcons,
   presetTypography,
-  presetUno,
+  presetWind4,
   transformerDirectives,
   transformerVariantGroup,
 } from 'unocss'
@@ -13,7 +13,7 @@ export default defineConfig({
     ['btn', 'border-none px-4 py-3 w-full rounded-12px inline-block bg-[var(--h5-c-primary)] text-white cursor-pointer disabled:cursor-not-allowed disabled:opacity-40 text-base font-semibold tracking-wide active:opacity-80 transition-opacity'],
   ],
   presets: [
-    presetUno(),
+    presetWind4(),
     presetAttributify(),
     presetIcons({
       scale: 1.2,
@@ -27,7 +27,7 @@ export default defineConfig({
     transformerVariantGroup(),
   ],
   safelist: [
-    ...('prose prose-sm m-auto text-left'.split(' ')),
+    ...('prose prose-sm m-auto text-left dark:prose-invert'.split(' ')),
     'i-ri-home-2-fill',
     'i-ri-information-fill',
     'i-ri-settings-3-line',
