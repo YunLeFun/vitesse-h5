@@ -3,8 +3,14 @@ button:
   back: 返回
   go: 确定
   home: 首页
-  toggle_dark: 切换深色模式
-  toggle_langs: 切换语言
+  settings: 设置
+  toggle_dark: 外观
+  toggle_langs: 语言
+settings:
+  general: 通用
+  about: 关于
+  dark: 深色
+  light: 浅色
 intro:
   desc: 📱 固执己见的 Vite H5 项目模板
   dynamic-route: 动态路由演示

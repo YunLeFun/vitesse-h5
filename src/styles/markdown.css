@@ -1,3 +1,16 @@
+.prose {
+  color: var(--h5-c-text);
+}
+
+.prose a {
+  color: var(--h5-c-primary);
+  text-decoration: none;
+}
+
+.prose a:active {
+  opacity: 0.6;
+}
+
 .prose pre:not(.shiki) {
   padding: 0;
 }
@@ -6,17 +19,19 @@
   font-family: 'DM Mono', monospace;
   font-size: 1.2em;
   line-height: 1.4;
+  border-radius: 10px;
 }
 
 .prose img {
   width: 100%;
+  border-radius: 10px;
 }
 
 .shiki-light {
-  background: #f8f8f8 !important;
+  background: var(--h5-c-input-bg) !important;
 }
 .shiki-dark {
-  background: #0e0e0e !important;
+  background: var(--h5-c-input-bg) !important;
 }
 
 html.dark .shiki-light {

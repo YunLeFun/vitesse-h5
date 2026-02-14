@@ -3,8 +3,14 @@ button:
   back: Back
   go: GO
   home: Home
-  toggle_dark: Toggle dark mode
-  toggle_langs: Change languages
+  settings: Settings
+  toggle_dark: Appearance
+  toggle_langs: Language
+settings:
+  general: General
+  about: About
+  dark: Dark
+  light: Light
 intro:
   desc: 📱 A H5 Template(Vite + Vue) inspired by Vitesse.
   dynamic-route: Demo of dynamic route

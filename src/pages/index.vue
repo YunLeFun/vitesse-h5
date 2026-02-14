@@ -29,23 +29,23 @@ const { t } = useI18n()
 </script>
 
 <template>
-  <div pt-4>
-    <div text-4xl>
-      <div i-carbon-application-mobile inline-block />
-    </div>
-    <p m-2>
-      <a rel="noreferrer" href="https://github.com/YunLeFun/vitesse-h5" target="_blank">
+  <div class="home-page">
+    <div class="home-hero">
+      <div class="home-icon-wrapper">
+        <div class="home-icon">
+          <div i-carbon-application-mobile />
+        </div>
+      </div>
+      <h1 class="home-title">
         Vitesse H5
-      </a>
-    </p>
-    <p>
-      <em text-sm opacity-75>{{ t('intro.desc') }}</em>
-    </p>
-
-    <div py-4 />
+      </h1>
+      <p class="home-desc">
+        {{ t('intro.desc') }}
+      </p>
+    </div>
 
     <Suspense>
-      <div m="auto" max-w="800px">
+      <div class="home-form">
         <input
           id="input"
           v-model="name"
@@ -53,24 +53,18 @@ const { t } = useI18n()
           :aria-label="t('intro.whats-your-name')"
           type="text"
           autocomplete="false"
-          p="x4 y2"
-          w="full"
-          text="center"
-          bg="transparent"
-          border="~ rounded gray-200 dark:gray-700"
+          class="home-input"
           @keydown.enter="go"
         >
         <label class="hidden" for="input">{{ t('intro.whats-your-name') }}</label>
 
-        <div>
-          <button
-            btn mt-4
-            :disabled="!name"
-            @click="go"
-          >
-            {{ t('button.go') }}
-          </button>
-        </div>
+        <button
+          btn
+          :disabled="!name"
+          @click="go"
+        >
+          {{ t('button.go') }}
+        </button>
       </div>
 
       <template #fallback>
@@ -79,6 +73,76 @@ const { t } = useI18n()
     </Suspense>
   </div>
 </template>
+
+<style scoped>
+.home-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 48px;
+}
+
+.home-hero {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.home-icon-wrapper {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 16px;
+}
+
+.home-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 64px;
+  height: 64px;
+  font-size: 1.75rem;
+  color: #fff;
+  background: linear-gradient(135deg, #007aff, #5856d6);
+  border-radius: 14px;
+  box-shadow: 0 4px 12px rgba(0, 122, 255, 0.3);
+}
+
+.home-title {
+  font-size: 1.75rem;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  margin: 0 0 8px;
+}
+
+.home-desc {
+  font-size: 0.9375rem;
+  color: var(--h5-c-secondary-text);
+  margin: 0;
+}
+
+.home-form {
+  width: 100%;
+  max-width: 400px;
+}
+
+.home-input {
+  display: block;
+  width: 100%;
+  padding: 12px 16px;
+  margin-bottom: 16px;
+  font-size: 1rem;
+  line-height: 1.25;
+  color: var(--h5-c-text);
+  background: var(--h5-c-input-bg);
+  border: none;
+  border-radius: 10px;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+.home-input::placeholder {
+  color: var(--h5-c-secondary-text);
+}
+</style>
 
 <route lang="yaml">
 meta:

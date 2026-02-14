@@ -1,24 +1,25 @@
-@import './markdown.css';
-
-html,
-body,
-#app {
-  height: 100%;
-  margin: 0;
-  padding: 0;
+* {
+  -webkit-tap-highlight-color: transparent;
+  outline: none;
 }
 
-#nprogress {
-  pointer-events: none;
+body {
+  background-color: var(--h5-c-bg);
+  color: var(--h5-c-text);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
-#nprogress .bar {
-  background: var(--h5-c-primary);
-  opacity: 0.75;
-  position: fixed;
-  z-index: 1031;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 2px;
+.icon-btn {
+  @apply inline-block cursor-pointer select-none opacity-75 transition duration-200 ease-in-out;
+}
+
+.icon-btn:active {
+  @apply opacity-100 scale-92;
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .icon-btn:hover {
+    @apply opacity-100 text-[var(--h5-c-primary)];
+  }
 }

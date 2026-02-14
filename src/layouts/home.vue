@@ -1,9 +1,6 @@
 <template>
-  <main class="p-4 text-center">
-    <NavMenu />
+  <main class="p-4 pb-20 text-center">
     <RouterView />
-    <div class="mt-5 mx-auto text-center opacity-75">
-      [Home Layout]
-    </div>
+    <TabBar />
   </main>
 </template>

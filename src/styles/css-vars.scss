@@ -1,13 +1,39 @@
 :root {
-  --h5-c-primary: #00aba9;
+  --h5-c-primary: #007aff;
 
-  --h5-c-bg: transparent;
+  --h5-c-bg: #f2f2f7;
   --h5-c-text: #000;
+
+  --h5-c-tab-bar-bg: rgba(249, 249, 249, 0.88);
+  --h5-c-tab-bar-border: rgba(0, 0, 0, 0.12);
+  --h5-c-tab-bar-inactive: #999;
+
+  --h5-c-menu-bg: #fff;
+  --h5-c-menu-separator: rgba(60, 60, 67, 0.12);
+  --h5-c-menu-secondary: rgba(60, 60, 67, 0.6);
+  --h5-c-menu-active: rgba(0, 0, 0, 0.04);
+
+  --h5-c-card-bg: #fff;
+  --h5-c-input-bg: rgba(120, 120, 128, 0.12);
+  --h5-c-secondary-text: rgba(60, 60, 67, 0.6);
 }
 
 html.dark {
   color-scheme: dark;
 
-  --h5-c-bg: #121212;
+  --h5-c-bg: #000;
   --h5-c-text: #fff;
+
+  --h5-c-tab-bar-bg: rgba(30, 30, 30, 0.88);
+  --h5-c-tab-bar-border: rgba(255, 255, 255, 0.08);
+  --h5-c-tab-bar-inactive: #666;
+
+  --h5-c-menu-bg: #1c1c1e;
+  --h5-c-menu-separator: rgba(84, 84, 88, 0.6);
+  --h5-c-menu-secondary: rgba(235, 235, 245, 0.6);
+  --h5-c-menu-active: rgba(255, 255, 255, 0.08);
+
+  --h5-c-card-bg: #1c1c1e;
+  --h5-c-input-bg: rgba(120, 120, 128, 0.24);
+  --h5-c-secondary-text: rgba(235, 235, 245, 0.6);
 }
